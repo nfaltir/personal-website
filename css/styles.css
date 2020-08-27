@@ -90,6 +90,10 @@ hr {
 	overflow: visible;
 }
 
+#about {
+	background-color: var(--orange);
+}
+
 h1,
 h2,
 h3,
@@ -191,6 +195,11 @@ a:not([href]) {
 a:not([href]):hover {
 	color: inherit;
 	text-decoration: none;
+}
+
+#header-box {
+	color: #5eaaa8;
+	background-color: #e5e5e5;
 }
 
 pre,
