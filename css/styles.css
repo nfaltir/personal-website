@@ -10602,3 +10602,13 @@ form .row:first-child .floating-label-form-group {
 .copyright {
 	background-color: #1a252f;
 }
+
+/*====================================================================*/
+
+@media only screen and (max-width: 960px) {
+	.three-inline-buttons .button {
+		width: 100%;
+		margin: 20px;
+		text-align: center;
+	}
+}
