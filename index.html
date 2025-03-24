@@ -46,35 +46,35 @@
         
         <!-- Quick Stats Bar -->
         <div class="flex flex-wrap justify-center gap-4 mt-8">
-          <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
-            <i class="fas fa-code-branch text-teal-400 text-xl mr-2"></i>
-            <div class="text-left">
-              <p class="text-gray-400 text-xs">Repositories</p>
-              <p class="text-lg font-bold">48</p>
+            <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
+              <i class="fas fa-code-branch text-teal-400 text-xl mr-2"></i>
+              <div class="text-left">
+                <p class="text-gray-400 text-xs">Repositories</p>
+                <p id="repo-count" class="text-lg font-bold">Loading...</p>
+              </div>
+            </div>
+            <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
+              <i class="fas fa-star text-yellow-400 text-xl mr-2"></i>
+              <div class="text-left">
+                <p class="text-gray-400 text-xs">Stars</p>
+                <p id="star-count" class="text-lg font-bold">Loading...</p>
+              </div>
+            </div>
+            <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
+              <i class="fas fa-code-commit text-purple-400 text-xl mr-2"></i>
+              <div class="text-left">
+                <p class="text-gray-400 text-xs">Commits</p>
+                <p id="commit-count" class="text-lg font-bold">Loading...</p>
+              </div>
+            </div>
+            <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
+              <i class="fas fa-users text-blue-400 text-xl mr-2"></i>
+              <div class="text-left">
+                <p class="text-gray-400 text-xs">Followers</p>
+                <p id="follower-count" class="text-lg font-bold">Loading...</p>
+              </div>
             </div>
           </div>
-          <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
-            <i class="fas fa-star text-yellow-400 text-xl mr-2"></i>
-            <div class="text-left">
-              <p class="text-gray-400 text-xs">Stars</p>
-              <p class="text-lg font-bold">245</p>
-            </div>
-          </div>
-          <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
-            <i class="fas fa-code-commit text-purple-400 text-xl mr-2"></i>
-            <div class="text-left">
-              <p class="text-gray-400 text-xs">Commits</p>
-              <p class="text-lg font-bold">1.8k</p>
-            </div>
-          </div>
-          <div class="bg-gray-800 bg-opacity-30 rounded-lg p-3 flex items-center shadow-lg border border-gray-700">
-            <i class="fas fa-users text-blue-400 text-xl mr-2"></i>
-            <div class="text-left">
-              <p class="text-gray-400 text-xs">Followers</p>
-              <p class="text-lg font-bold">163</p>
-            </div>
-          </div>
-        </div>
       </header>
 
       <!-- Improved Stats Section with Glass Morphism -->
@@ -197,7 +197,7 @@
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center">
                 <i class="fas fa-folder text-teal-400 mr-3 text-xl group-hover:scale-110 transition-transform duration-300"></i>
-                <h3 class="text-xl font-semibold text-white">AI Image Generator</h3>
+                <h3 class="text-xl font-semibold text-white">Mini Bloomberg</h3>
               </div>
               <div class="flex space-x-3">
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">
@@ -209,16 +209,17 @@
               </div>
             </div>
             <p class="text-gray-400 mb-4 h-24">
-              Advanced image generation tool utilizing stable diffusion models to create high-quality, customizable images from text descriptions.
+                A simple python app that uses the 
+                Streamlit web framework to generate stock reports.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs bg-purple-500 bg-opacity-20 text-purple-300 rounded-full border border-purple-400">Python</span>
-              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-400">React</span>
-              <span class="px-2 py-1 text-xs bg-green-500 bg-opacity-20 text-green-300 rounded-full border border-green-400">TensorFlow</span>
+              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Python</span>
+              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-200 rounded-full border border-blue-300">Streamlit</span>
+              <span class="px-2 py-1 text-xs bg-amber-500 bg-opacity-20 text-amber-300 rounded-full border border-amber-400">API</span>
             </div>
             <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between text-sm text-gray-500">
-              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i> 89</span>
-              <span class="flex items-center"><i class="fas fa-code-branch mr-1 text-blue-400"></i> 28</span>
+              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i>open-source</span>
+              <span class="flex items-center"><i class="fas fa-code-branch mr-1 text-blue-400"></i>3</span>
             </div>
           </div>
           
@@ -227,7 +228,7 @@
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center">
                 <i class="fas fa-folder text-teal-400 mr-3 text-xl group-hover:scale-110 transition-transform duration-300"></i>
-                <h3 class="text-xl font-semibold text-white">Smart Finance Dashboard</h3>
+                <h3 class="text-xl font-semibold text-white">CofaExpress</h3>
               </div>
               <div class="flex space-x-3">
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">
@@ -238,17 +239,18 @@
                 </a>
               </div>
             </div>
-            <p class="text-gray-400 mb-4 h-24">
-              Interactive financial dashboard with real-time data visualization, investment tracking, and predictive analytics for personal finance management.
+            <p class="text-gray-400 mb-4 h-24">A logistics and supply chain management web application.
+
+
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-400">JavaScript</span>
-              <span class="px-2 py-1 text-xs bg-green-500 bg-opacity-20 text-green-300 rounded-full border border-green-400">Node.js</span>
+              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-400">Django</span>
+              <span class="px-2 py-1 text-xs bg-green-500 bg-opacity-20 text-gray-100 rounded-full border border-blue-400">Golang</span>
               <span class="px-2 py-1 text-xs bg-cyan-500 bg-opacity-20 text-cyan-300 rounded-full border border-cyan-400">Postgres</span>
             </div>
             <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between text-sm text-gray-500">
-              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i> 72</span>
-              <span class="flex items-center"><i class="fas fa-code-branch mr-1 text-blue-400"></i> 14</span>
+              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i>B2C</span>
+              <span class="flex items-center"><i class="fas fa-code-branch mr-1 text-blue-400"></i> 1</span>
             </div>
           </div>
           
@@ -257,7 +259,7 @@
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center">
                 <i class="fas fa-folder text-teal-400 mr-3 text-xl group-hover:scale-110 transition-transform duration-300"></i>
-                <h3 class="text-xl font-semibold text-white">DevOps Toolkit</h3>
+                <h3 class="text-xl font-semibold text-white">Nodelookup</h3>
               </div>
               <div class="flex space-x-3">
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">
@@ -269,15 +271,15 @@
               </div>
             </div>
             <p class="text-gray-400 mb-4 h-24">
-              Comprehensive collection of tools and scripts for automating development operations, CI/CD pipelines, and cloud infrastructure management.
+                A social media analytics platform that creates reports and visualizations.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-400">Golang</span>
-              <span class="px-2 py-1 text-xs bg-orange-500 bg-opacity-20 text-orange-300 rounded-full border border-orange-400">Docker</span>
+              <span class="px-2 py-1 text-xs bg-blue-500 bg-opacity-20 text-indigo-300 rounded-full border border-indigo-400">Javascript</span>
+              <span class="px-2 py-1 text-xs bg-orange-500 bg-opacity-20 text-orange-300 rounded-full border border-orange-400">React</span>
               <span class="px-2 py-1 text-xs bg-yellow-500 bg-opacity-20 text-yellow-300 rounded-full border border-yellow-400">AWS</span>
             </div>
             <div class="mt-4 pt-4 border-t border-gray-700 flex justify-between text-sm text-gray-500">
-              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i> 128</span>
+              <span class="flex items-center"><i class="fas fa-star mr-1 text-yellow-400"></i>B2B</span>
               <span class="flex items-center"><i class="fas fa-code-branch mr-1 text-blue-400"></i> 46</span>
             </div>
           </div>
@@ -423,117 +425,7 @@
       </footer>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const ctx = document.getElementById('contributionsChart').getContext('2d');
-        
-        // Create gradient for bars
-        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-        gradient.addColorStop(0, 'rgba(45, 212, 191, 0.8)');
-        gradient.addColorStop(1, 'rgba(6, 182, 212, 0.2)');
-        
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [
-              'API Service',
-              'ML Pipeline',
-              'UI Components',
-              'Documentation',
-              'DevOps Tools',
-            ],
-            datasets: [
-              {
-                label: 'Contributions',
-                data: [42, 56, 23, 18, 37],
-                backgroundColor: gradient,
-                borderColor: 'rgba(45, 212, 191, 1)',
-                borderWidth: 1,
-                borderRadius: 6,
-                maxBarThickness: 40,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-              legend: {
-                display: false,
-              },
-              title: {
-                display: true,
-                text: 'Open Source Contributions by Project',
-                color: 'rgba(200, 200, 200, 0.8)',
-                font: {
-                  size: 16,
-                  family: "'Inter', sans-serif",
-                  weight: '500'
-                },
-                padding: {
-                  bottom: 20
-                }
-              },
-              tooltip: {
-                backgroundColor: 'rgba(20, 20, 30, 0.9)',
-                titleFont: {
-                  size: 14
-                },
-                bodyFont: {
-                  size: 13
-                },
-                padding: 12,
-                cornerRadius: 8,
-                displayColors: false
-              }
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-                grid: {
-                  color: 'rgba(100, 100, 100, 0.2)',
-                  drawBorder: false,
-                },
-                ticks: {
-                  color: 'rgba(200, 200, 200, 0.8)',
-                  padding: 10,
-                  font: {
-                    size: 12
-                  },
-                  callback: function(value) {
-                    return value + ' commits';
-                  }
-                }
-              },
-              x: {
-                grid: {
-                  display: false,
-                  drawBorder: false,
-                },
-                ticks: {
-                  color: 'rgba(200, 200, 200, 0.8)',
-                  padding: 8,
-                  font: {
-                    size: 12
-                  }
-                }
-              }
-            },
-            animation: {
-              duration: 2000,
-              easing: 'easeOutQuart'
-            },
-            layout: {
-              padding: {
-                left: 10,
-                right: 10,
-                top: 0,
-                bottom: 10
-              }
-            }
-          }
-        });
-      });
-    </script>
+    <script src="js/data_tables.js"></script>
+    <script src="js/quick_stats.js"></script>
   </body>
 </html>
